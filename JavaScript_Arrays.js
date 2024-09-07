@@ -90,120 +90,159 @@
     // প্রতি লুপ শেষে i++ দ্বারা পরিবর্তন হচ্ছে।
 
 /* while লুপ: */
-// let counter = 0;
-// while(counter < array1.length){
-//     // কোড প্রবেশ করান
-//     counter++
-// }
-// এই লুপের মধ্যে counter বাইরে সেট করা হয়।
+    // let counter = 0;
+    // while(counter < array1.length){
+    //     // কোড প্রবেশ করান
+    //     counter++
+    // }
+    // এই লুপের মধ্যে counter বাইরে সেট করা হয়।
 
 /* অসীম while লুপ: */
-// while(true) {
-//     if(breakCondition){
-//         break;
-//     }
-// }
+    // while(true) {
+    //     if(breakCondition){
+    //         break;
+    //     }
+    // }
 
 /* অসীম for লুপ: */
 
-// for ( , , ){
-//     if(breakCondition){
-//         break;
-//     }
-// }
+    // for ( , , ){
+    //     if(breakCondition){
+    //         break;
+    //     }
+    // }
 
 // 2. for (in) লুপ
-// এই লুপ অ্যারের ইনডেক্সের উপর ইটারেট করে। উদাহরণস্বরূপ:
-// let array1 = ['all', 'cows', 'are', 'big'];
-// for(let index in array1){
-//     console.log(index); // প্রিন্ট করবে 0, 1, 2, 3
-// }
+    // এই লুপ অ্যারের ইনডেক্সের উপর ইটারেট করে। উদাহরণস্বরূপ:
+    // let array1 = ['all', 'cows', 'are', 'big'];
+    // for(let index in array1){
+    //     console.log(index); // প্রিন্ট করবে 0, 1, 2, 3
+    // }
 
 // // অ্যারের কন্টেন্ট প্রিন্ট করতে চাইলে:
-// for (let index in array1){
-//     console.log(array1[index]); // প্রিন্ট করবে 'all', 'cows', 'are', 'big'
-// }
+    // for (let index in array1){
+    //     console.log(array1[index]); // প্রিন্ট করবে 'all', 'cows', 'are', 'big'
+    // }
 
 // 3. for (of) লুপ
 // এই লুপ অ্যারের উপাদানের উপর ইটারেট করে। উদাহরণস্বরূপ:
 
-// for (let element of array1){
-//     console.log(element); // প্রিন্ট করবে 'all', 'cows', 'are', 'big'
-// }
+    // for (let element of array1){
+    //     console.log(element); // প্রিন্ট করবে 'all', 'cows', 'are', 'big'
+    // }
 
 /* 4. forEach() পদ্ধতি */
-// forEach() এর মাধ্যমে প্রতিটি উপাদানের উপর ইটারেট করা যায়। তবে এই পদ্ধতিতে ইটারেশন থামানো বা কোনো উপাদান বাদ দেওয়া সম্ভব নয়:
-// let array1 = ['all', 'cows', 'are', 'big'];
-// array1.forEach(function(element, index){
-//     console.log(index, element);
-// });
+    // forEach() এর মাধ্যমে প্রতিটি উপাদানের উপর ইটারেট করা যায়। তবে এই পদ্ধতিতে ইটারেশন থামানো বা কোনো উপাদান বাদ দেওয়া সম্ভব নয়:
+    // let array1 = ['all', 'cows', 'are', 'big'];
+    // array1.forEach(function(element, index){
+    //     console.log(index, element);
+    // });
 // অথবা:
-// array1.forEach(function (element, index) {
-//     console.log(array1[index]); // প্রিন্ট করবে 'all', 'cows', 'are', 'big'
-//  });
-// উপসংহার: বিভিন্ন লুপ পদ্ধতি নির্ভর করে আপনার প্রয়োজন অনুযায়ী, যেমন .forEach() সরল এবং সরাসরি, কিন্তু for বা while লুপ আপনাকে আরও নিয়ন্ত্রণ দেয়, যেমন ইটারেশন থামানো।
+    // array1.forEach(function (element, index) {
+    //     console.log(array1[index]); // প্রিন্ট করবে 'all', 'cows', 'are', 'big'
+    //  });
+    // উপসংহার: বিভিন্ন লুপ পদ্ধতি নির্ভর করে আপনার প্রয়োজন অনুযায়ী, যেমন .forEach() সরল এবং সরাসরি, কিন্তু for বা while লুপ আপনাকে আরও নিয়ন্ত্রণ দেয়, যেমন ইটারেশন থামানো।
 
 
 /* Helper Functions in JavaScript Arrays */
-// 1. .slice(begin, end)
-// ব্যাখ্যা: .slice() একটি বিদ্যমান অ্যারের নির্দিষ্ট অংশ ফেরত দেয়, কিন্তু অ্যারেটি পরিবর্তন করে না। এটি দুইটি প্যারামিটার নেয়: শুরু ইনডেক্স এবং শেষ ইনডেক্স।
-// var array1 = [1, 2, 3, 4];
-// array1.slice(1, 2); // returns [2], array1 থাকে [1, 2, 3, 4]
-// array1.slice(2, 4); // returns [3, 4], array1 থাকে [1, 2, 3, 4]
+    // 1. .slice(begin, end)
+    // ব্যাখ্যা: .slice() একটি বিদ্যমান অ্যারের নির্দিষ্ট অংশ ফেরত দেয়, কিন্তু অ্যারেটি পরিবর্তন করে না। এটি দুইটি প্যারামিটার নেয়: শুরু ইনডেক্স এবং শেষ ইনডেক্স।
+    // var array1 = [1, 2, 3, 4];
+    // array1.slice(1, 2); // returns [2], array1 থাকে [1, 2, 3, 4]
+    // array1.slice(2, 4); // returns [3, 4], array1 থাকে [1, 2, 3, 4]
 
 // শুধু শুরু ইনডেক্স দিলে: যদি শুধু শুরু ইনডেক্স দেয়া হয়, তাহলে শেষ ইনডেক্স সর্বাধিক ইনডেক্স হিসেবে ধরে নেয়।
-// array1.slice(1); // returns [2, 3, 4], array1 থাকে [1, 2, 3, 4]
+    // array1.slice(1); // returns [2, 3, 4], array1 থাকে [1, 2, 3, 4]
 
 // কোনো প্যারামিটার না দিলে: এটি একটি কপি অ্যারে ফেরত দেয়।
-// array1.slice(); // returns [1, 2, 3, 4]
+    // array1.slice(); // returns [1, 2, 3, 4]
 
 // 2. Reference-based Arrays
-// ব্যাখ্যা: জাভাস্ক্রিপ্টে অ্যারেগুলি reference-based হয়, তাই যখন একটি অ্যারে নতুন কোনো ভ্যারিয়েবলে অ্যাসাইন করা হয়, উভয় অ্যারে একই রেফারেন্স ধরে রাখে।
-// var array1 = [1, 2, 3, 4];
-// var array2 = array1;
-// array2[0] = 5;
-// console.log(array1); // [5, 2, 3, 4]
+    // ব্যাখ্যা: জাভাস্ক্রিপ্টে অ্যারেগুলি reference-based হয়, তাই যখন একটি অ্যারে নতুন কোনো ভ্যারিয়েবলে অ্যাসাইন করা হয়, উভয় অ্যারে একই রেফারেন্স ধরে রাখে।
+    // var array1 = [1, 2, 3, 4];
+    // var array2 = array1;
+    // array2[0] = 5;
+    // console.log(array1); // [5, 2, 3, 4]
 
 // .from() পদ্ধতি: .from() ব্যবহার করে অ্যারের একটি নতুন কপি তৈরি করা যেতে পারে।
-// var array1 = [1, 2, 3, 4];
-// var array2 = Array.from(array1);
-// array2[0] = 5;
-// console.log(array1); // [1, 2, 3, 4]
+    // var array1 = [1, 2, 3, 4];
+    // var array2 = Array.from(array1);
+    // array2[0] = 5;
+    // console.log(array1); // [1, 2, 3, 4]
 
 // 3. .splice(begin, size, element1, element2, ...)
-// ব্যাখ্যা: .splice() অ্যারের উপাদান সরায় এবং/অথবা নতুন উপাদান যোগ করে। এটি তিনটি প্যারামিটার নেয়: শুরু ইনডেক্স, সরানোর আকার, এবং যোগ করার উপাদান।
-// var array1 = [1, 2, 3, 4];
-// array1.splice(1, 2); // returns [2, 3], array1 এখন [1, 4]
+    // ব্যাখ্যা: .splice() অ্যারের উপাদান সরায় এবং/অথবা নতুন উপাদান যোগ করে। এটি তিনটি প্যারামিটার নেয়: শুরু ইনডেক্স, সরানোর আকার, এবং যোগ করার উপাদান।
+    // var array1 = [1, 2, 3, 4];
+    // array1.splice(1, 2); // returns [2, 3], array1 এখন [1, 4]
 
 // যোগ করা:
-// var array1 = [1, 2, 3, 4];
-// array1.splice(1, 2, 5, 6, 7); // returns [2, 3], array1 এখন [1, 5, 6, 7, 4]
+    // var array1 = [1, 2, 3, 4];
+    // array1.splice(1, 2, 5, 6, 7); // returns [2, 3], array1 এখন [1, 5, 6, 7, 4]
 
 // 4. .concat()
-// ব্যাখ্যা: .concat() অ্যারের শেষে নতুন উপাদান যোগ করে এবং নতুন অ্যারে ফিরিয়ে দেয়।
-// var array1 = [1, 2, 3, 4];
-// var array2 = array1.concat([2, 3, 4]); // returns [1, 2, 3, 4, 2, 3, 4]
+    // ব্যাখ্যা: .concat() অ্যারের শেষে নতুন উপাদান যোগ করে এবং নতুন অ্যারে ফিরিয়ে দেয়।
+    // var array1 = [1, 2, 3, 4];
+    // var array2 = array1.concat([2, 3, 4]); // returns [1, 2, 3, 4, 2, 3, 4]
 
 // 5. .length Property
-// ব্যাখ্যা: .length অ্যারের সাইজ নির্ধারণ করে। এই প্রোপার্টির মান কমিয়ে অ্যারের উপাদান মুছে ফেলা যায়।
-// var array1 = [1, 2, 3, 4];
-// array1.length = 3; // array1 এখন [1, 2, 3]
+    // ব্যাখ্যা: .length অ্যারের সাইজ নির্ধারণ করে। এই প্রোপার্টির মান কমিয়ে অ্যারের উপাদান মুছে ফেলা যায়।
+    // var array1 = [1, 2, 3, 4];
+    // array1.length = 3; // array1 এখন [1, 2, 3]
 
 // 6. Spread Operator (...):
-// ব্যাখ্যা: স্প্রেড অপারেটর কোনো অ্যারেকে এক্সপ্যান্ড করতে ব্যবহার করা হয়।
-// var numbers = [1, 2, 3, 4];
-// function addFourNums(a, b, c, d) {
-//    return a + b + c + d;
-// }
-// console.log(addFourNums(...numbers)); // 10
+    // ব্যাখ্যা: স্প্রেড অপারেটর কোনো অ্যারেকে এক্সপ্যান্ড করতে ব্যবহার করা হয়।
+    // var numbers = [1, 2, 3, 4];
+    // function addFourNums(a, b, c, d) {
+    //    return a + b + c + d;
+    // }
+    // console.log(addFourNums(...numbers)); // 10
 
 // 7. Math.max() এবং Math.min() সঙ্গে স্প্রেড অপারেটর
 // ব্যাখ্যা: স্প্রেড অপারেটর ব্যবহার করে সর্বোচ্চ এবং সর্বনিম্ন মান নির্ধারণ করা যায়।
 
-// var array1 = [1, 2, 3, 4, 5];
-// console.log(Math.max(...array1)); // 5
+    // var array1 = [1, 2, 3, 4, 5];
+    // console.log(Math.max(...array1)); // 5
 
-// var array2 = [3, 2, -123, 2132, 12];
-// console.log(Math.min(...array2)); // -123
+    // var array2 = [3, 2, -123, 2132, 12];
+    // console.log(Math.min(...array2)); // -123
 
-// উপসংহার: এই হেল্পার ফাংশন এবং স্প্রেড অপারেটর জাভাস্ক্রিপ্টে অ্যারের সাথে কার্যকরভাবে কাজ করতে সহায়ক হয়।
+    // উপসংহার: এই হেল্পার ফাংশন এবং স্প্রেড অপারেটর জাভাস্ক্রিপ্টে অ্যারের সাথে কার্যকরভাবে কাজ করতে সহায়ক হয়।
+
+/* JavaScript Functional Array Methods */
+//---------------------------------------
+// 1. Map
+    // ব্যাখ্যা: map() প্রতিটি অ্যারের উপাদানের উপর একটি প্রদত্ত ফাংশন প্রয়োগ করে এবং একটি নতুন অ্যারে ফিরিয়ে দেয়। এটি মূল অ্যারেটিকে পরিবর্তন করে না।
+    // উদাহরণ: প্রতিটি উপাদানকে ১০ দিয়ে গুণ করা:
+    // [1, 2, 3, 4, 5, 6, 7].map(function (value) {
+    //     return value * 10;
+    //   });
+    //   // returns [10, 20, 30, 40, 50, 60, 70]
+
+// 2. Filter
+    // ব্যাখ্যা: filter() ফাংশনটি শুধুমাত্র সেই উপাদানগুলো ফেরত দেয় যেগুলো প্রদত্ত শর্ত পূরণ করে। এটি মূল অ্যারে পরিবর্তন করে না।
+    // উদাহরণ: ১০০ এর চেয়ে বড় উপাদান ফিল্টার করা:
+    // [100, 2003, 10, 203, 333, 12].filter(function (value) {
+    //     return value > 100;
+    //   });
+    //   // returns [2003, 203, 333]
+
+// 3. Reduce
+    // ব্যাখ্যা: reduce() একটি প্রদত্ত ফাংশনের মাধ্যমে অ্যারের সব উপাদানকে একক মানে পরিণত করে। এটি পূর্ববর্তী উপাদান এবং বর্তমান উপাদানের মধ্যে সংযোগ তৈরি করে।
+
+    // উদাহরণ: সব উপাদানকে যোগ করা:
+    // var sum = [0, 1, 2, 3, 4].reduce(function (prevVal, currentVal) {
+    //     return prevVal + currentVal;
+    //   });
+    //   console.log(sum); // prints 10
+    // var sum = [0, 1, 2, 3, 4].reduce(function (prevVal, currentVal) {
+    //   return prevVal + currentVal;
+    // });
+    // console.log(sum); // prints 10
+
+    // initialValue প্যারামিটার: reduce() এর দ্বিতীয় আর্গুমেন্ট হিসেবে একটি initialValue প্রদান করলে প্রাথমিক মান সেট হয়।
+    // উদাহরণ: প্রাথমিক মান ১ দিয়ে যোগফল বের করা:
+    // var sum = [0, 1, 2, 3, 4].reduce(function (prevVal, currentVal) {
+    //     return prevVal + currentVal;
+    //   }, 1);
+    //   console.log(sum); // prints 11
+    // উপসংহার: map, filter, এবং reduce ফাংশনগুলো জাভাস্ক্রিপ্টে ফাংশনাল প্রোগ্রামিং ধারণা কাজে লাগিয়ে কার্যকরভাবে অ্যারে প্রসেস করতে সহায়তা করে।
